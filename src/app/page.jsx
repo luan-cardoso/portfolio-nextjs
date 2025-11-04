@@ -4,6 +4,8 @@ import ArrowDown from "../../components/icons/ArrowDown";
 import GitHub from "../../components/icons/GitHub";
 import WhatsApp from "../../components/icons/WhatsApp";
 import Nav from "../../components/Nav";
+import Sec2 from "../../components/Sec2";
+import Sec3 from "../../components/Sec3";
 
 export default function HomePage() {
   return (
@@ -17,14 +19,14 @@ export default function HomePage() {
             </h1>
             <h1 className="text-7xl font-extrabold leading-12">
               SOFTWARE <br />
-              <span className="text-[var(--skyBlue)] font-medium text-5xl">
+              <span className="font-medium text-5xl text-gradient">
                 Developer.
               </span>
             </h1>
             <p className="text-lg leading-6 tracking-wider">
               Sou um Desenvolvedor Web Fullstack, atualmente morando em
               Fortaleza CE. Meu trabalho é transformar ideias em experiências
-              digitais exepcionais!
+              digitais excepcionais!
             </p>
             <div>
               <p className="text-sm text-[var(--gray)] mb-2">Get in Touch!</p>
@@ -45,7 +47,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="rotate-12 bg-[#1b1b1b] rounded-full overflow-hidden p-6 border border-[var(--skyBlue)]" style={{ width: 400, height: 400 }}>
+            <div
+              className="rotate-12 border-2 border-[var(--gradient)] overflow-hidden p-6"
+              style={{
+                width: 400,
+                height: 400,
+                borderImageSource: "var(--gradient)",
+                borderImageSlice: 1,
+              }}
+            >
               <Image
                 className="w-full h-full object-contain"
                 src="/memoji.png"
@@ -58,15 +68,15 @@ export default function HomePage() {
         </div>
         <div className="flex gap-2 justify-center items-center">
           <p>ver projetos</p>
-          <ArrowDown/>
+          <ArrowDown />
         </div>
       </section>
 
-      <section className="scroll-section section-2 bg-amber-600">
-        Seção 2
+      <section className="scroll-section section-2 py-10">
+        <Sec2 />
       </section>
-      <section className="scroll-section section-3 bg-amber-950">
-        Seção 3
+      <section className="scroll-section section-3 py-10">
+        <Sec3 />
       </section>
     </div>
   );

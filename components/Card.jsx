@@ -1,0 +1,27 @@
+import Badge from "./Badge";
+import Eye from "./icons/Arrow";
+
+export default function Card() {
+  return (
+    <div className="relative flex flex-col gap-4 bg-[#1b1b1b] w-[550px] h-[300px] p-10 border border-[#252525] rounded-md">
+      <h1 className="text-gradient text-2xl whitespace-nowrap overflow-hidden text-ellipsis">
+        Gerador de planos de aula com IA
+      </h1>
+      <p>
+        Looluta, in ducimus eius minima reiciendis nam dolore dolores iure error
+        dolor, molestias, a repudiandae culpa cupiditate. Voluptates corporis at
+        deleniti maxime?
+      </p>
+      <div className="flex gap-3 absolute bottom-10">
+        <Badge>Nextjs</Badge>
+        <Badge>TailwindCSS</Badge>
+        <Badge>Nodejs</Badge>
+      </div>
+      <div className="w-fit absolute top-2 right-2 text-[var(--gray)]">
+        <Badge>
+          <Eye />
+        </Badge>
+      </div>
+    </div>
+  );
+}

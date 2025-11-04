@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={karla.className}>
       <body className="antialiased">
-        <div className="max-w-[var(--breakpoint-desktop)] mx-auto px-4">
+        <div className="max-w-[var(--breakpoint-desktop)] mx-auto px-10">
           {children}
         </div>
       </body>

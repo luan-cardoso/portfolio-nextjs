@@ -5,6 +5,7 @@
   --white: #d4d4d4;
   --gray: #707070;
   --skyBlue: #4987e5;
+  --gradient: linear-gradient(to right, #f59e0b, #ec4899);
 }
 
 @theme {
@@ -61,7 +62,8 @@ body {
 }
 
 @keyframes bounce-y {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(3px);
   }
   50% {
@@ -72,4 +74,11 @@ body {
 .animate-bounce-y {
   animation: bounce-y 1.6s ease-in-out infinite;
   will-change: transform;
+}
+
+.text-gradient {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

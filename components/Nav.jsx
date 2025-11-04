@@ -7,7 +7,7 @@ export default function Nav() {
     <section className="flex justify-between">
       <h1 className="text-3xl font-extrabold tracking-wider">
         portfolio
-        <span className="text-sm font-bold text-[var(--skyBlue)]">.DEV</span>
+        <span className="text-sm font-bold text-gradient">.DEV</span>
       </h1>
       <Badge>
         <Email />
