@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Badge from "../../components/Badge";
-import ArrowDown from "../../components/icons/ArrowDown";
-import GitHub from "../../components/icons/GitHub";
-import WhatsApp from "../../components/icons/WhatsApp";
-import Nav from "../../components/Nav";
-import Sec2 from "../../components/Sec2";
-import Sec3 from "../../components/Sec3";
+import Badge from "../components/Badge";
+import ArrowDown from "../components/icons/ArrowDown";
+import GitHub from "../components/icons/GitHub";
+import WhatsApp from "../components/icons/WhatsApp";
+import Nav from "../components/Nav";
+import Projects from "../components/Projects";
+import About from "../components/About";
 
 export default function HomePage() {
   return (
@@ -73,10 +73,10 @@ export default function HomePage() {
       </section>
 
       <section className="scroll-section section-2 py-10">
-        <Sec2 />
+        <Projects />
       </section>
       <section className="scroll-section section-3 py-10">
-        <Sec3 />
+        <About />
       </section>
     </div>
   );
