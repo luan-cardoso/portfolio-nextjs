@@ -9,7 +9,13 @@ export default function ArrowDown() {
       className="animate-bounce-y"
     >
       <defs>
-        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <linearGradient
+          id="gradient-arrowDown"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="0%"
+        >
           <stop offset="0%" stopColor="#f59e0b" />
           <stop offset="100%" stopColor="#ec4899" />
         </linearGradient>
@@ -18,7 +24,7 @@ export default function ArrowDown() {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M8.74999 1.75V1H7.24999V1.75V12.4393L3.28032 8.46967L2.74999 7.93934L1.68933 9L2.21966 9.53033L7.29288 14.6036C7.68341 14.9941 8.31657 14.9941 8.7071 14.6036L13.7803 9.53033L14.3107 9L13.25 7.93934L12.7197 8.46967L8.74999 12.4393V1.75Z"
-        fill="url(#gradient)"
+        fill="url(#gradient-arrowDown)"
       ></path>
     </svg>
   );
