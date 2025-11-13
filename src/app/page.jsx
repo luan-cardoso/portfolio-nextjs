@@ -72,7 +72,6 @@ export default function HomePage() {
                   width={400}
                   height={400}
                   alt="Meu memoji"
-                  quality={100}
                 />
                 <div className="flex flex-row gap-8 max-sm:justify-center">
                   <div className="flex flex-col gap-2 justify-center">

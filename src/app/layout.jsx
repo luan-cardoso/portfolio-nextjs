@@ -11,10 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={karla.className}>
-      <body className="antialiased">
-        <div className="max-w-[1280px] mx-auto px-10 max-sm:px-5">
-          {children}
-        </div>
+      <body>
+        <div className="max-w-7xl mx-auto px-10 max-sm:px-5">{children}</div>
       </body>
     </html>
   );

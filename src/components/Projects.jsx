@@ -14,13 +14,7 @@ export default function Sec2() {
       <div className="flex flex-col justify-center items-center gap-4">
         <div className="grid grid-cols-2 gap-10 max-lg:overflow-y-auto max-lg:grid-cols-1 max-lg:h-[700px] max-sm:h-[500px]">
           <Card />
-          <Card />
-          <Card />
-          <Card />
         </div>
-        <p className="text-sm hidden max-lg:block max-sm:block">
-          use o scroll &#x261D;&#x1F3FB;
-        </p>
       </div>
     </div>
   );
