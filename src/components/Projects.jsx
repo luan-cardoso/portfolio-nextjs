@@ -16,17 +16,16 @@ export default async function Sec2() {
       </div>
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-y-5 gap-x-10 max-lg:overflow-y-auto max-lg:grid-cols-1 max-lg:h-[700px] max-sm:h-[500px] items-center">
         {project.map((project, index) => (
-        <div key={index}>
-          <Card 
-            title={project.title}
-            desc={project.desc}
-            stack={project.stack}
-            url={project.url}
-          />
-        </div>
+          <div key={index}>
+            <Card
+              title={project.title}
+              desc={project.desc}
+              stack={project.stack}
+              url={project.url}
+            />
+          </div>
         ))}
       </div>
-   
     </div>
   );
 }

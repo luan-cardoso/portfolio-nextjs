@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={karla.className}>
       <body>
-        <div className="max-w-7xl mx-auto px-10 max-sm:px-5">{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   );

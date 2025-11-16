@@ -13,18 +13,17 @@ import Arrow from "../components/icons/Arrow";
 export default function HomePage() {
   return (
     <div className="scroll-container ">
-      <section className="scroll-section section-1 grid grid-cols-1 grid-rows-[1fr_7fr_2fr] max-sm:grid-rows-[1fr_5fr_1fr] pt-10 max-sm:pt-0">
-        <Nav />
-        <div className="grid grid-cols-2 grid-rows-1 max-sm:grid-cols-1 max-sm:grid-rows-[1fr_1fr] max-sm:gap-2">
-          <div className="flex flex-col justify-center gap-8 max-lg:gap-5 max-sm:gap-4">
-            <div className="flex text-2xl items-center gap-2 max-lg:text-xl max-sm:hidden">
+      <section className="scroll-section section-1 grid grid-cols-2 grid-rows-1 relative">
+        <div className="p-16 flex flex-col justify-center">
+          <div className="flex flex-col justify-center gap-8">
+            <div className="flex text-2xl items-center gap-2">
               <Arrow />
               <h1>Olá, sou Luan Cardoso &#x1F44B;&#x1F3FB;</h1>
             </div>
-            <h1 className="text-7xl font-extrabold leading-12 max-lg:text-6xl max-sm:text-5xl max-sm:leading-8">
+            <h1 className="text-7xl font-extrabold leading-12">
               SOFTWARE <br />
               <SplitText
-                className="font-medium text-5xl text-gradient max-sm:hidden"
+                className="font-medium text-5xl text-gradient"
                 text="Developer."
                 duration={0.8}
               />
@@ -32,7 +31,7 @@ export default function HomePage() {
                 Developer.
               </span>
             </h1>
-            <p className="text-lg leading-6 tracking-wider max-sm:text-sm max-sm:leading-4">
+            <p className="text-lg leading-6 tracking-wider">
               Sou um Desenvolvedor Web Fullstack, atualmente morando em
               Fortaleza CE. Meu trabalho é transformar ideias em experiências
               digitais excepcionais!
@@ -56,70 +55,58 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="animate__animated animate__fadeIn animate__delay-1s flex">
-              <div
-                className="flex border-3 w-fit h-fit gap-8 p-4 items-center justify-center"
-                style={{
-                  borderImageSource: "var(--gradient)",
-                  borderImageSlice: 1,
-                }}
-              >
-                <Image
-                  className="-rotate-12 w-[200px] h-[220px] max-sm:w-[100px] max-sm:h-[120px] max-md:hidden max-lg:hidden max-sm:block"
-                  src="/memoji.png"
-                  width={400}
-                  height={400}
-                  alt="Meu memoji"
-                />
-                <div className="flex flex-row gap-8 max-sm:justify-center">
-                  <div className="flex flex-col gap-2 justify-center">
-                    <p className="text-gradient text-lg max-sm:text-sm font-semibold w-fit">
-                      Posso fazer para você:
-                    </p>
-                    <div className="max-sm:text-xs flex flex-col gap-1">
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        Páginas Pessoais
-                      </div>
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        Sites Empresariais
-                      </div>
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        Portfólios
-                      </div>
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        E-commerce
-                      </div>
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        Apps iOS [em breve]
-                      </div>
-                      <div className="flex gap-2 items-center text-nowrap">
-                        <Arrow />
-                        Apps Android [em breve]
-                      </div>
-                    </div>
-                  </div>
+            <div className="flex flex-col gap-2 mt-10">
+              <p className="text-gradient text-lg font-semibold w-fit">
+                Posso fazer para você:
+              </p>
+              <div className="flex flex-col gap-1">
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  Páginas Pessoais
+                </div>
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  Sites Empresariais
+                </div>
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  Portfólios
+                </div>
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  E-commerce
+                </div>
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  Apps iOS [em breve]
+                </div>
+                <div className="flex gap-2 items-center text-nowrap">
+                  <Arrow />
+                  Apps Android [em breve]
                 </div>
               </div>
-            </h1>
+            </div>
           </div>
         </div>
-        <div className="flex gap-2 justify-center items-center max-sm:text-sm">
-          <p>ver projetos</p>
-          <ArrowDown />
+        <div className="relative">
+          <Image
+            src="/desktop.jpg"
+            alt="desktop image"
+            fill="true"
+            className="object-cover object-center"
+          />
+          
+        </div>
+        <div className="flex gap-2 justify-center items-center absolute bottom-10 left-16">
+            <p>ver projetos</p>
+            <ArrowDown />
         </div>
       </section>
 
-      <section className="scroll-section section-2 py-10">
+      <section className="scroll-section section-2 py-10 max-w-7xl mx-auto px-10 max-sm:px-5">
         <Projects />
       </section>
-      <section className="scroll-section section-3 pt-10">
+      <section className="scroll-section section-3 pt-10 max-w-7xl mx-auto px-10 max-sm:px-5">
         <About />
       </section>
     </div>

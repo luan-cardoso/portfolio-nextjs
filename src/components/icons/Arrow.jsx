@@ -15,8 +15,8 @@ export default function Arrow() {
       ></path>
       <defs>
         <linearGradient id="gradient-arrow" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#f59e0b" />
-          <stop offset="100%" stopColor="#ec4899" />
+          <stop offset="0%" stopColor="#3c72b9" />
+          <stop offset="100%" stopColor="#9860cc" />
         </linearGradient>
       </defs>
     </svg>

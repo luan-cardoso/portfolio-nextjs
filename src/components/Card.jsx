@@ -1,8 +1,7 @@
 import Badge from "./Badge";
 import Eye from "./icons/Eye";
 
-export default function Card({title, desc, stack, url}) {
-
+export default function Card({ title, desc, stack, url }) {
   const stackArray = Array.isArray(stack) ? stack : [];
 
   return (
@@ -10,9 +9,7 @@ export default function Card({title, desc, stack, url}) {
       <h1 className="text-gradient text-xl whitespace-nowrap overflow-hidden text-ellipsis max-sm:text-sm font-semibold">
         {title}
       </h1>
-      <p className="max-sm:text-sm">
-        {desc}
-      </p>
+      <p className="max-sm:text-sm">{desc}</p>
       <div className="flex gap-3 absolute bottom-10 max-sm:bottom-2 text-sm font-semibold">
         {stackArray.map((item, index) => (
           <Badge key={index}>{item}</Badge>
