@@ -60,14 +60,14 @@ export default function HomePage() {
           <div className="flex flex-col items-center justify-center">
             <h1 className="animate__animated animate__fadeIn animate__delay-1s flex">
               <div
-                className="flex border-2 w-fit h-fit gap-8 p-4 items-center"
+                className="flex border-3 w-fit h-fit gap-8 p-4 items-center justify-center"
                 style={{
                   borderImageSource: "var(--gradient)",
                   borderImageSlice: 1,
                 }}
               >
                 <Image
-                  className="w-[220px] h-[220px] max-sm:w-[100px] max-sm:h-[100px] object-contain -rotate-12 max-md:hidden max-lg:hidden max-sm:block"
+                  className="-rotate-12 w-[200px] h-[220px] max-sm:w-[100px] max-sm:h-[120px] max-md:hidden max-lg:hidden max-sm:block"
                   src="/memoji.png"
                   width={400}
                   height={400}

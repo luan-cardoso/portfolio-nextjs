@@ -6,6 +6,11 @@ const karla = Karla({ subsets: ["latin"], display: "swap" });
 export const metadata = {
   title: "Luan Cardoso",
   description: "Desenvolvedor de Software Portfolio",
+  icons: {
+    icon: "/bat.png",
+    shortcut: "/bat.png",
+    apple: "/bat.png",
+  },
 };
 
 export default function RootLayout({ children }) {
