@@ -16,7 +16,7 @@ export default function ArrowDown() {
           x2="100%"
           y2="0%"
         >
-         <stop offset="0%" stopColor="#3c72b9" />
+          <stop offset="0%" stopColor="#3c72b9" />
           <stop offset="100%" stopColor="#9860cc" />
         </linearGradient>
       </defs>
