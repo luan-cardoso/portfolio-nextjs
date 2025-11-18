@@ -7,9 +7,9 @@ export default async function Sec2() {
   return (
     <div className="flex flex-col gap-16 max-sm:gap-8">
       <div className="flex flex-col gap-1 w-fit">
-        <h1 className="text-4xl font-bold text-gradient max-lg:text-3xl max-sm:text-lg">
+        <h2 className="text-4xl font-bold text-gradient max-lg:text-3xl max-sm:text-lg">
           Projetos em destaque
-        </h1>
+        </h2>
         <p className="text-lg max-sm:text-sm">
           Todos os projetos estão disponíveis no meu Github.
         </p>

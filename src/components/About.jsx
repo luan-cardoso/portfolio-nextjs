@@ -2,9 +2,9 @@ export default function Sec3() {
   return (
     <div className="flex flex-col gap-14 max-sm:gap-8 relative h-full">
       <div className="flex flex-col gap-1 w-fit">
-        <h1 className="text-gradient text-4xl font-bold w-fit max-lg:text-3xl max-sm:text-lg">
+        <h2 className="text-gradient text-4xl font-bold w-fit max-lg:text-3xl max-sm:text-lg">
           Sobre mim
-        </h1>
+        </h2>
         <p className="text-lg  max-sm:text-sm">Me conheça melhor.</p>
       </div>
       <div className="text-lg flex flex-col gap-4 text-justify max-lg:text-md max-sm:text-sm">
@@ -32,19 +32,19 @@ export default function Sec3() {
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Frontend
           </p>
-          <img src="https://skillicons.dev/icons?i=react,next,css,tailwindcss&theme=dark" />
+          <img alt="skills badges frontend" src="https://skillicons.dev/icons?i=react,next,css,tailwindcss&theme=dark" />
         </div>
         <div className="w-fit border border-[#252525] rounded-md p-4">
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Backend
           </p>
-          <img src="https://skillicons.dev/icons?i=nodejs,express,vercel&theme=dark" />
+          <img alt="skills badges backend" src="https://skillicons.dev/icons?i=nodejs,express,vercel&theme=dark" />
         </div>
         <div className="w-fit border border-[#252525] rounded-md p-4">
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Database
           </p>
-          <img src="https://skillicons.dev/icons?i=mongo,mysql,postgres,supabase&theme=dark" />
+          <img alt="skills badges database" src="https://skillicons.dev/icons?i=mongo,mysql,postgres,supabase&theme=dark" />
         </div>
       </div>
       <div className="w-full flex justify-end items-center py-4 absolute bottom-0 text-sm text-[var(--gray)] max-lg:text-xs max-sm:hidden">

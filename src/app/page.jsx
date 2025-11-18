@@ -3,7 +3,6 @@ import Badge from "../components/Badge";
 import ArrowDown from "../components/icons/ArrowDown";
 import GitHub from "../components/icons/GitHub";
 import WhatsApp from "../components/icons/WhatsApp";
-import Nav from "../components/Nav";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import SplitText from "../components/SplitText";
@@ -19,7 +18,7 @@ export default function HomePage() {
           <div className="flex flex-col justify-center gap-6 max-sm:gap-4">
             <div className="flex text-lg items-center gap-2">
               <Arrow />
-              <h1>Olá, sou Luan Cardoso &#x1F44B;&#x1F3FB;</h1>
+              <span>Olá, sou Luan Cardoso &#x1F44B;&#x1F3FB;</span>
             </div>
             <h1 className="text-7xl font-extrabold leading-12 max-sm:text-5xl max-sm:leading-9">
               SOFTWARE <br />
