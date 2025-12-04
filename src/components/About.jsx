@@ -23,7 +23,7 @@ export default function Sec3() {
           otimizadas para SEO, e utilizo Node.js no backend para construir APIs
           robustas e seguras. Atuando de maneira Full-Stack, entregando soluções
           completas do início ao fim. Além disso, busco expandir minha expertise
-          para o Desenvolvimento Mobile utilizando Flutter, garantindo que as
+          para o Desenvolvimento Mobile utilizando React Native, garantindo que as
           soluções sejam verdadeiramente multiplataforma.
         </p>
       </div>

@@ -145,7 +145,7 @@ export default function HomePage() {
             src="/desktop.jpg"
             alt="desktop image"
             fill="true"
-            className="object-cover object-center rounded-3xl p-20"
+            className="object-cover object-center"
           />
         </div>
       </section>

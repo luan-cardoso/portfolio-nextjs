@@ -16,7 +16,7 @@ export default function Card({ title, desc, stack, url }) {
         ))}
       </div>
       {url ? (
-        <div className="w-fit absolute top-2 right-2 text-[var(--gray)] cursor-pointer">
+        <div className="w-fit absolute top-2 right-2 text-(--gray) cursor-pointer">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <Badge>
               <Eye />
