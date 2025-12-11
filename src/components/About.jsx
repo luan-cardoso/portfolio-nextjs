@@ -1,4 +1,4 @@
-export default function Sec3() {
+export default function About() {
   return (
     <div className="flex flex-col gap-14 max-sm:gap-8 relative h-full">
       <div className="flex flex-col gap-1 w-fit">
@@ -23,8 +23,8 @@ export default function Sec3() {
           otimizadas para SEO, e utilizo Node.js no backend para construir APIs
           robustas e seguras. Atuando de maneira Full-Stack, entregando soluções
           completas do início ao fim. Além disso, busco expandir minha expertise
-          para o Desenvolvimento Mobile utilizando React Native, garantindo que as
-          soluções sejam verdadeiramente multiplataforma.
+          para o Desenvolvimento Mobile utilizando React Native, garantindo que
+          as soluções sejam verdadeiramente multiplataforma.
         </p>
       </div>
       <div className="flex gap-10 justify-center mt-16 max-sm:mt-0 max-sm:gap-1">
@@ -32,22 +32,31 @@ export default function Sec3() {
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Frontend
           </p>
-          <img alt="skills badges frontend" src="https://skillicons.dev/icons?i=react,next,css,tailwindcss&theme=dark" />
+          <img
+            alt="skills badges frontend"
+            src="https://skillicons.dev/icons?i=react,next,css,tailwindcss&theme=dark"
+          />
         </div>
         <div className="w-fit border border-[#252525] rounded-md p-4">
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Backend
           </p>
-          <img alt="skills badges backend" src="https://skillicons.dev/icons?i=nodejs,express,vercel&theme=dark" />
+          <img
+            alt="skills badges backend"
+            src="https://skillicons.dev/icons?i=nodejs,express,vercel&theme=dark"
+          />
         </div>
         <div className="w-fit border border-[#252525] rounded-md p-4">
           <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
             Database
           </p>
-          <img alt="skills badges database" src="https://skillicons.dev/icons?i=mongo,mysql,postgres,supabase&theme=dark" />
+          <img
+            alt="skills badges database"
+            src="https://skillicons.dev/icons?i=mongo,mysql,postgres,supabase&theme=dark"
+          />
         </div>
       </div>
-      <div className="w-full flex justify-end items-center py-4 absolute bottom-0 text-sm text-[var(--gray)] max-lg:text-xs max-sm:hidden">
+      <div className="w-full flex justify-end items-center py-4 absolute bottom-0 text-sm text-(--gray) max-lg:text-xs max-sm:hidden">
         Designed and developed by Luan Cardoso
       </div>
     </div>

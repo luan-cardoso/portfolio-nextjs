@@ -1,7 +1,7 @@
 import Card from "./Card";
 import { getAllProjects } from "../../lib/data";
 
-export default async function Sec2() {
+export default async function Projects() {
   const project = await getAllProjects();
 
   return (
@@ -11,7 +11,7 @@ export default async function Sec2() {
           Projetos em destaque
         </h2>
         <p className="text-lg max-sm:text-sm">
-          Todos os projetos estão disponíveis no meu Github.
+          Todos os projetos estão disponíveis no meu GitHub.
         </p>
       </div>
       <div className="max-w-4xl mx-auto grid grid-cols-2 gap-y-5 gap-x-10 max-lg:overflow-y-auto max-lg:grid-cols-1 max-lg:h-[700px] max-sm:h-[500px] items-center">

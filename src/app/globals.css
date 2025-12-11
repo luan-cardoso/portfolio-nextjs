@@ -1,11 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #131313;
-  --white: #d4d4d4;
+  --background: #0e0e0e;
+  --white: #cacaca;
   --gray: #707070;
-  --skyBlue: #4987e5;
   --gradient: linear-gradient(to right, #3c72b9, #9860cc);
+}
+
+#background {
+  /* From Uiverse.io by milegelu */
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--background);
+  --gap: 6em;
+  --line: 1px;
+  --color: #ffffff11;
+
+  background-image:
+    linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
 }
 
 body {
@@ -74,4 +100,8 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.bg-gradient {
+  background: var(--gradient);
 }

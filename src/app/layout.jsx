@@ -5,7 +5,8 @@ const karla = Karla({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "Luan Cardoso",
-  description: "Portfolio online de Luan Cardoso, Desenvolvedor de Software, graduando em Engenharia de Software.",
+  description:
+    "Portfolio online de Luan Cardoso, Desenvolvedor de Software, graduando em Engenharia de Software.",
   icons: {
     icon: "/bat.png",
     shortcut: "/bat.png",

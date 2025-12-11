@@ -39,7 +39,7 @@ export async function addProject(prevState, formData) {
     };
 
     //insert new project into "projects_collection" collection
-    const result = await db
+    await db
       .collection("projects_collection")
       .insertOne(newProject);
   } catch (error) {
