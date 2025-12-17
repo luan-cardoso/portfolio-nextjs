@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={karla.className}>
       <body>
-        <div className="">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   );

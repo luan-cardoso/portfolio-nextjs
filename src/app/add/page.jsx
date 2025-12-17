@@ -1,4 +1,4 @@
-"use client"; // ⬅️ MAKES THIS A CLIENT COMPONENT
+"use client";
 
 import { useFormStatus } from "react-dom";
 import { addProject } from "../actions";

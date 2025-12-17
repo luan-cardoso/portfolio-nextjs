@@ -39,9 +39,7 @@ export async function addProject(prevState, formData) {
     };
 
     //insert new project into "projects_collection" collection
-    await db
-      .collection("projects_collection")
-      .insertOne(newProject);
+    await db.collection("projects_collection").insertOne(newProject);
   } catch (error) {
     console.error("Failed to add project:", error);
   }

@@ -1,63 +1,79 @@
+import Arrow from "./icons/Arrow";
+import ArrowDown from "./icons/ArrowDown";
+
 export default function About() {
   return (
-    <div className="flex flex-col gap-14 max-sm:gap-8 relative h-full">
+    <div className="flex flex-col gap-14 relative h-full">
       <div className="flex flex-col gap-1 w-fit">
         <h2 className="text-gradient text-4xl font-bold w-fit max-lg:text-3xl max-sm:text-lg">
-          Sobre mim
+          Construindo Experiências Digitais
         </h2>
-        <p className="text-lg  max-sm:text-sm">Me conheça melhor.</p>
-      </div>
-      <div className="text-lg flex flex-col gap-4 text-justify max-lg:text-md max-sm:text-sm">
-        <p>
-          Sou um Desenvolvedor Web especializado em transformar requisitos
-          complexos em aplicações robustas e funcionais. Com formação em
-          Engenharia de Software, eu me dedico a construir soluções digitais que
-          não apenas funcionam, mas que escalam e entregam resultados. Meu foco
-          está em desenvolver experiências web modernas e eficientes, utilizando
-          as melhores práticas para otimizar a performance.
-        </p>
-        <p>
-          Minha stack principal é construída sobre o JavaScript e TypeScript,
-          tecnologias que garantem a solidez e escalabilidade dos projetos. Sou
-          proficiente em React e Next.js para desenvolver interfaces rápidas e
-          otimizadas para SEO, e utilizo Node.js no backend para construir APIs
-          robustas e seguras. Atuando de maneira Full-Stack, entregando soluções
-          completas do início ao fim. Além disso, busco expandir minha expertise
-          para o Desenvolvimento Mobile utilizando React Native, garantindo que
-          as soluções sejam verdadeiramente multiplataforma.
+        <p className="text-xl text-(--gray) max-sm:text-sm">
+          Especialista em criar aplicações escaláveis, robustas e UI/UX de alta
+          qualidade.
         </p>
       </div>
-      <div className="flex gap-10 justify-center mt-16 max-sm:mt-0 max-sm:gap-1">
-        <div className="w-fit border border-[#252525] rounded-md p-4">
-          <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
-            Frontend
+      <div className="flex gap-10 justify-center mt-16 max-sm:mt-0 max-sm:flex-col max-sm:gap-5">
+        <div className="w-fit border border-[#252525] rounded-md p-10 max-sm:p-5">
+          <p className="font-bold text-gradient text-2xl w-fit max-sm:text-lg max-sm:mb-4">
+            O que posso criar?
           </p>
-          <img
-            alt="skills badges frontend"
-            src="https://skillicons.dev/icons?i=react,next,css,tailwindcss&theme=dark"
-          />
+          <p className="text-(--gray) mb-4 max-sm:hidden">
+            Desenvolvendo soluções escaláveis e seguras.
+          </p>
+          <div className="flex flex-col gap-2 text-lg max-sm:text-xs">
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Páginas Pessoais e Portfólios com foco no SEO.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Sites Empresariais e E-commerces.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Aplicações em Tempo Real.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              APIs e Microsserviços.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Apps Android e iOS [Em Breve].
+            </span>
+          </div>
         </div>
-        <div className="w-fit border border-[#252525] rounded-md p-4">
-          <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
-            Backend
+        <div className="w-fit border border-[#252525] rounded-md p-10 max-sm:p-5">
+          <p className="font-bold text-gradient text-2xl w-fit max-sm:text-lg max-sm:mb-4">
+            Tecnologias que uso
           </p>
-          <img
-            alt="skills badges backend"
-            src="https://skillicons.dev/icons?i=nodejs,express,vercel&theme=dark"
-          />
-        </div>
-        <div className="w-fit border border-[#252525] rounded-md p-4">
-          <p className="font-bold text-gradient mb-4 w-fit max-sm:text-xs">
-            Database
+          <p className="text-(--gray) mb-4 max-sm:hidden">
+            Trabalhando com tecnologias modernas e funcionais.
           </p>
-          <img
-            alt="skills badges database"
-            src="https://skillicons.dev/icons?i=mongo,mysql,postgres,supabase&theme=dark"
-          />
+          <div className="flex flex-col gap-2 text-lg max-sm:text-xs">
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Typescript/Javascript.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              React, Next.js, TailwindCSS.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              Node.js, Express, Zod, ORMs, Docker.
+            </span>
+            <span className="flex gap-2 items-center">
+              <Arrow />
+              MongoDB, PostgreSQL, MySQL, Supabase.
+            </span>
+          </div>
         </div>
       </div>
-      <div className="w-full flex justify-end items-center py-4 absolute bottom-0 text-sm text-(--gray) max-lg:text-xs max-sm:hidden">
-        Designed and developed by Luan Cardoso
+      <div className="bottom-10 left-1/2 -translate-x-1/2 absolute flex gap-2 justify-center items-center max-sm:bottom-2 max-sm:text-xs">
+        <p>Ver Projetos</p>
+        <ArrowDown />
       </div>
     </div>
   );

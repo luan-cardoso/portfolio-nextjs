@@ -1,31 +1,20 @@
-import Card from "./Card";
 import { getAllProjects } from "../../lib/data";
+import ProjectsCarousel from "./ProjectsCarousel";
 
 export default async function Projects() {
   const project = await getAllProjects();
 
   return (
-    <div className="flex flex-col gap-16 max-sm:gap-8">
-      <div className="flex flex-col gap-1 w-fit">
+    <div className="flex flex-col gap-14 max-sm:gap-8 relative">
+      <div className="flex flex-col gap-1 w-fit mb-16 max-sm:mb-6">
         <h2 className="text-4xl font-bold text-gradient max-lg:text-3xl max-sm:text-lg">
           Projetos em destaque
         </h2>
-        <p className="text-lg max-sm:text-sm">
+        <p className="text-xl text-(--gray) max-sm:text-sm">
           Todos os projetos estão disponíveis no meu GitHub.
         </p>
       </div>
-      <div className="max-w-4xl mx-auto grid grid-cols-2 gap-y-5 gap-x-10 max-lg:overflow-y-auto max-lg:grid-cols-1 max-lg:h-[700px] max-sm:h-[500px] items-center">
-        {project.map((project, index) => (
-          <div key={index}>
-            <Card
-              title={project.title}
-              desc={project.desc}
-              stack={project.stack}
-              url={project.url}
-            />
-          </div>
-        ))}
-      </div>
+      <ProjectsCarousel projects={project} />
     </div>
   );
 }
