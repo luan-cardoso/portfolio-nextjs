@@ -81,49 +81,7 @@ export default function ProjectsCarousel({ projects }) {
         </div>
       </div>
 
-      {/* Botões de navegação */}
-      {totalSlides > 1 && (
-        <>
-          <button
-            onClick={goToPrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 lg:-translate-x-12 border border-[#252525] rounded-full p-2 sm:p-3 hover:bg-[#252525] active:bg-[#2a2a2a] transition-colors z-10 max-sm:hidden"
-            aria-label="Slide anterior"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-[#cacaca] sm:w-6 sm:h-6"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 lg:translate-x-12 border border-[#252525] rounded-full p-2 sm:p-3 hover:bg-[#252525] active:bg-[#2a2a2a] transition-colors z-10 max-sm:hidden"
-            aria-label="Próximo slide"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-[#cacaca] sm:w-6 sm:h-6"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </>
-      )}
+      
 
       {/* Indicadores de slide */}
       {totalSlides > 1 && (
@@ -132,9 +90,9 @@ export default function ProjectsCarousel({ projects }) {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`cursor-pointer h-3 w-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "w-8 bg-gradient"
+                  ? "w-10 bg-gradient"
                   : "w-2 bg-[#252525] hover:bg-[#353535]"
               }`}
               aria-label={`Ir para slide ${index + 1}`}
