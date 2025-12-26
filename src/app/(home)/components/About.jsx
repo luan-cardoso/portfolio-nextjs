@@ -6,13 +6,13 @@ export default function About() {
       <div>
         <SplitText
           className="font-bold text-xl text-gradient max-sm:hidden"
-          text="Construindo Experiências Digitais"
+          text="Construindo Experiências"
           duration={0.8}
         />
         <h2 className="font-bold text-xl text-gradient hidden max-sm:block max-sm:text-lg">
-          Construindo Experiências Digitais
+          Construindo Experiências
         </h2>
-        <p className="text-[var(--gray)] max-sm:text-sm">
+        <p className="text-(--gray) max-sm:text-sm">
           Aplicações escaláveis, robustas e seguras.
         </p>
       </div>

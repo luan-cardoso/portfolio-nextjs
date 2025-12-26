@@ -8,7 +8,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="h-[10vh] px-20 flex justify-between items-center max-sm:px-5">
+    <nav className="h-[10vh] min-h-[10vh] px-20 flex justify-between items-center max-sm:px-5 flex-shrink-0">
       <div className="flex gap-4">
         <Link
           id="link-style"
