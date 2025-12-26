@@ -1,5 +1,5 @@
-import Badge from "./Badge";
-import Eye from "./icons/Eye";
+import Badge from "../../../../shared/components/Badge";
+import Eye from "../../../../shared/icons/Eye";
 
 export default function Card({ title, desc, stack, url }) {
   const stackArray = Array.isArray(stack) ? stack : [];
@@ -10,7 +10,7 @@ export default function Card({ title, desc, stack, url }) {
         {title}
       </h2>
       <p className="text-xl max-sm:text-sm">{desc}</p>
-      <div className="flex gap-3 absolute bottom-12 max-sm:bottom-6 text-sm font-semibold text-(--gray)">
+      <div className="flex gap-3 absolute bottom-12 max-sm:bottom-6 text-sm font-semibold text-[var(--gray)]">
         {stackArray.map((item, index) => (
           <Badge key={index}>{item}</Badge>
         ))}

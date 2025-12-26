@@ -3,68 +3,18 @@
 :root {
   --white: #cacaca;
   --gray: #707070;
-  --gradient: linear-gradient(to right, #3c72b9, #9860cc);
+  --gradient: linear-gradient(to right, #5094d3, #2f7bb9);
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: black;
+  background-color: rgb(19, 19, 19);
   color: var(--white);
 }
 
 * {
   font-family: inherit;
-}
-
-.scroll-container {
-  height: 100vh;
-  /* Ocupa a altura total da tela */
-  overflow-y: scroll;
-  /* Permite a rolagem vertical */
-  scroll-snap-type: y mandatory;
-  /* Habilita o ajuste, forçando o encaixe */
-  scroll-behavior: smooth;
-  /* Suaviza o scroll */
-  scrollbar-width: none;
-  /* Remove a scrollbar no Firefox */
-  -ms-overflow-style: none;
-  /* Remove a scrollbar no IE/Edge */
-}
-
-.scroll-section {
-  height: 100vh;
-  /* Cada seção ocupa a altura total da tela */
-  scroll-snap-align: start;
-  /* Garante que a seção pare no topo da viewport */
-}
-
-/* Remove a scrollbar no Chrome/Webkit */
-.scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
-/* Melhora a performance do scroll */
-.scroll-container {
-  -webkit-overflow-scrolling: touch;
-  /* Scroll suave em dispositivos iOS */
-  overscroll-behavior: contain;
-  /* Evita scroll bounce em navegadores */
-}
-
-@keyframes bounce-y {
-  0%,
-  100% {
-    transform: translateY(3px);
-  }
-  50% {
-    transform: translateY(-3px);
-  }
-}
-
-.animate-bounce-y {
-  animation: bounce-y 1.6s ease-in-out infinite;
-  will-change: transform;
 }
 
 .text-gradient {
@@ -76,4 +26,22 @@ body {
 
 .bg-gradient {
   background: var(--gradient);
+}
+
+#link-style {
+  width: fit-content;
+  font-weight: 600;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+}
+
+#link-style:hover {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #5094d3, #2f7bb9) 1;
+}
+
+#link-style:focus,
+#link-style.link-active {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #5094d3, #2f7bb9) 1;
 }

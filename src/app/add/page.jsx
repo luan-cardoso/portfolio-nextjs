@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
-import { addProject } from "../actions";
+import { addProject } from "./actions";
 import { useActionState } from "react";
 
 // Helper component for the Submit button (uses useFormStatus)

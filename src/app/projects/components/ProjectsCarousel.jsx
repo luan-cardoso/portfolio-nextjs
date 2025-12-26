@@ -9,6 +9,15 @@ export default function ProjectsCarousel({ projects }) {
   const [touchEnd, setTouchEnd] = useState(null);
   const carouselRef = useRef(null);
 
+  // Verificação de segurança
+  if (!projects || !Array.isArray(projects) || projects.length === 0) {
+    return (
+      <div className="text-center py-8 text-gray-400">
+        Nenhum projeto disponível no momento.
+      </div>
+    );
+  }
+
   const totalSlides = projects.length;
 
   const goToNext = () => {
@@ -80,8 +89,6 @@ export default function ProjectsCarousel({ projects }) {
           ))}
         </div>
       </div>
-
-      
 
       {/* Indicadores de slide */}
       {totalSlides > 1 && (

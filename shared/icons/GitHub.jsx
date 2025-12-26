@@ -17,8 +17,8 @@ export default function GitHub() {
       </g>
       <defs>
         <linearGradient id="gradient-github" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#3c72b9" />
-          <stop offset="100%" stopColor="#9860cc" />
+          <stop offset="0%" stopColor="#5094d3" />
+          <stop offset="100%" stopColor="#2f7bb9" />
         </linearGradient>
       </defs>
     </svg>

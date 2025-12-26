@@ -1,12 +1,13 @@
 import { Karla } from "next/font/google";
 import "./globals.css";
+import Navigation from "../../shared/components/Navigation";
 
 const karla = Karla({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "Luan Cardoso",
   description:
-    "Portfolio online de Luan Cardoso, Desenvolvedor de Software, graduando em Engenharia de Software.",
+    "Portfólio online de Luan Cardoso, Desenvolvedor de Software, graduando em Engenharia de Software.",
   icons: {
     icon: "/bat.png",
     shortcut: "/bat.png",
@@ -17,8 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={karla.className}>
-      <body>
-        <div>{children}</div>
+      <body className="overflow-hidden">
+        <Navigation />
+        <div className="h-[90vh]">{children}</div>
       </body>
     </html>
   );
