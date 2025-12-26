@@ -1,6 +1,6 @@
 "use server";
 
-import clientPromise from "../../shared/lib/mongodb";
+import clientPromise from "../../../shared/lib/mongodb";
 import { redirect } from "next/navigation";
 
 export async function addProject(prevState, formData) {

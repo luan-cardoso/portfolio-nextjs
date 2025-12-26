@@ -10,7 +10,7 @@ export default function Skills() {
           text="Tecnologias"
           duration={0.8}
         />
-        <p className="text-[var(--gray)]">Tecnologias modernas e funcionais.</p>
+        <p className="text-(--gray)">Tecnologias modernas e funcionais.</p>
       </div>
       <div className="text-xl leading-6 tracking-wide">
         <div className="flex flex-col text-lg">
