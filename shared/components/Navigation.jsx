@@ -8,7 +8,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="h-[10vh] min-h-[10vh] px-20 flex justify-between items-center max-sm:px-5 flex-shrink-0">
+    <nav className="h-[10vh] min-h-[10vh] px-20 flex justify-between items-center max-sm:px-5 shrink-0 ">
       <div className="flex gap-4">
         <Link
           id="link-style"
@@ -26,7 +26,7 @@ export default function Navigation() {
         </Link>
       </div>
       <div className="max-sm:text-xs">
-        <Badge>luan.cardoso0029@gmail.com</Badge>
+        <Badge bg="#353535">luan.cardoso0029@gmail.com</Badge>
       </div>
     </nav>
   );

@@ -1,16 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --white: #cacaca;
-  --gray: #707070;
-  --gradient: linear-gradient(to right, #5094d3, #2f7bb9);
+  --black: #252525;
+  --gray: #3a3a3a;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: rgb(24, 24, 24);
-  color: var(--white);
+  background-color: #e6e6e6;
+  color: var(--black);
 }
 
 * {
@@ -18,14 +17,14 @@ body {
 }
 
 .text-gradient {
-  background: var(--gradient);
+  background: var(--black);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .bg-gradient {
-  background: var(--gradient);
+  background: var(--black);
 }
 
 #link-style {
@@ -36,12 +35,10 @@ body {
 }
 
 #link-style:hover {
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #5094d3, #2f7bb9) 1;
+  border-bottom: 2px solid var(--black);
 }
 
 #link-style:focus,
 #link-style.link-active {
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #5094d3, #2f7bb9) 1;
+  border-bottom: 2px solid var(--black);
 }
