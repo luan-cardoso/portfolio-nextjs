@@ -84,6 +84,7 @@ export default function ProjectsCarousel({ projects }) {
                 desc={project.desc}
                 stack={project.stack}
                 url={project.url}
+                clientOrCompany={project.clientOrCompany}
               />
             </div>
           ))}

@@ -6,7 +6,7 @@ export default function Arrow() {
       strokeLinejoin="round"
       viewBox="0 0 16 16"
       width="16"
-      style={{ color: '#E6E6E6' }}
+      style={{ color: "#E6E6E6" }}
     >
       <path
         fillRule="evenodd"

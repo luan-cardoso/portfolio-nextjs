@@ -35,6 +35,7 @@ export async function addProject(prevState, formData) {
       title: formData.get("title"),
       desc: formData.get("desc"),
       url: formData.get("url"),
+      clientOrCompany: formData.get("clientOrCompany"),
       stack: stackArray,
     };
 

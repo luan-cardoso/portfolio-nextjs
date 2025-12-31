@@ -9,7 +9,7 @@ export default function Intro() {
       </div>
       <h1 className="text-8xl font-extrabold max-sm:text-6xl max-sm:text-center">
         <TextType
-          text={["Software", "Next.js", "Node.js"]}
+          text={["Software", "Web"]}
           typingSpeed={145}
           pauseDuration={1500}
           showCursor={true}

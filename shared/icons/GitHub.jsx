@@ -6,7 +6,7 @@ export default function GitHub() {
       strokeLinejoin="round"
       viewBox="0 0 16 16"
       width="20"
-      style={{ color: '#E6E6E6' }}
+      style={{ color: "#252525" }}
     >
       <g clipPath="url(#clip0_872_3147)">
         <path

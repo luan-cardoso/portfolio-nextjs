@@ -25,8 +25,10 @@ export default function Navigation() {
           Projetos
         </Link>
       </div>
-      <div className="max-sm:text-xs">
-        <Badge bg="#353535">luan.cardoso0029@gmail.com</Badge>
+      <div className=" text-sm max-sm:text-xs shadow-2xl">
+        <Badge bg="#D8F999">
+          <p className="text-(--black)">luan.cardoso0029@gmail.com</p>
+        </Badge>
       </div>
     </nav>
   );

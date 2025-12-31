@@ -113,6 +113,17 @@ export default function AddProjectPage() {
                 className="bg-white text-gray-800 border-2 border-gray-700 rounded px-3 py-2 outline-none"
               />
             </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="clientOrCompany" className="font-medium text-sm">
+                Client or Company
+              </label>
+              <input
+                type="text"
+                id="clientOrCompany"
+                name="clientOrCompany"
+                className="bg-white text-gray-800 border-2 border-gray-700 rounded px-3 py-2 outline-none"
+              />
+            </div>
 
             {/* STACK */}
             <div className="flex flex-col gap-2">

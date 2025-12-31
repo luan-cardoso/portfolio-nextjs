@@ -9,7 +9,7 @@ export default async function Projects() {
       <h2 className="text-2xl font-bold text-gradient mt-10 w-fit max-sm:text-lg">
         Projetos em destaque
       </h2>
-      <p className="text-lg text-(--gray) mb-10 max-sm:text-sm">
+      <p className="text-lg text-(--gray) mb-20 max-sm:text-sm">
         Todos os meus projetos estão disponíveis no meu GitHub.
       </p>
       <ProjectsCarousel projects={projects} />
