@@ -3,14 +3,14 @@ import SplitText from "../../../../shared/components/SplitText";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 text-(--black)">
       <div>
         <SplitText
           className="font-bold text-xl"
           text="Tecnologias"
           duration={0.8}
         />
-        <p className="text-(--gray)">Tecnologias modernas e funcionais.</p>
+        <p>Tecnologias modernas e funcionais.</p>
       </div>
       <div className="text-xl leading-4 tracking-wide">
         <div className="flex flex-col text-lg">

@@ -6,10 +6,10 @@ export default async function Projects() {
 
   return (
     <div className="px-10 h-full overflow-y-auto">
-      <h2 className="text-2xl font-bold text-gradient mt-10 w-fit max-sm:text-lg">
+      <h2 className="text-2xl font-bold mt-10 w-fit max-sm:text-lg">
         Projetos em destaque
       </h2>
-      <p className="text-lg text-(--gray) mb-20 max-sm:text-sm">
+      <p className="text-lg mb-20 max-sm:text-sm">
         Todos os meus projetos estão disponíveis no meu GitHub.
       </p>
       <ProjectsCarousel projects={projects} />

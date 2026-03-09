@@ -3,14 +3,14 @@ import SplitText from "../../../../shared/components/SplitText";
 
 export default function Services() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 text-(--black)">
       <div>
         <SplitText
           className="font-bold text-xl"
           text="O que posso criar?"
           duration={0.8}
         />
-        <p className="text-(--gray)">Desenvolvendo soluções.</p>
+        <p >Desenvolvendo soluções.</p>
       </div>
       <div className="flex flex-col text-lg">
         <span className="flex gap-2 items-center">

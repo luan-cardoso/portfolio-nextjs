@@ -1,7 +1,8 @@
-import { Karla } from "next/font/google";
+import { Karla, Yesteryear } from "next/font/google";
 import "./globals.css";
 import Navigation from "../../shared/components/Navigation";
 
+const yesteryear = Yesteryear({ weight: "400", subsets: ["latin"], display: "swap" });
 const karla = Karla({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {

@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --black: #252525;
+  --black: #222222;
+  --white: #e6e6e6;
   --gray: #3a3a3a;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: #e6e6e6;
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 * {
@@ -23,9 +24,6 @@ body {
   color: transparent;
 }
 
-.bg-gradient {
-  background: var(--black);
-}
 
 #link-style {
   width: fit-content;
@@ -35,10 +33,10 @@ body {
 }
 
 #link-style:hover {
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid #fb2c36;
 }
 
 #link-style:focus,
 #link-style.link-active {
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid #fb2c36;
 }

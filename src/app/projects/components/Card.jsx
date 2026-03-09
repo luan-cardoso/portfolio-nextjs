@@ -1,13 +1,12 @@
 import Badge from "../../../../shared/components/Badge";
 import Buildings from "../../../../shared/icons/Buildings";
-import Eye from "../../../../shared/icons/Eye";
 
 export default function Card({ title, desc, stack, url, clientOrCompany }) {
   const stackArray = Array.isArray(stack) ? stack : [];
 
   return (
-    <div className="grid grid-cols-1 grid-rows-[2fr_8fr] w-[560px] h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl bg-lime-200 border border-black/25">
-      <div className="rounded-t-2xl bg-lime-200 flex gap-4 items-center px-10 py-4 ">
+    <div className="grid grid-cols-1 grid-rows-[2fr_8fr] w-[560px] h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl bg-red-500 border border-black/25">
+      <div className="rounded-t-2xl bg-red-500 flex justify-between items-center px-10 py-4 ">
         <div className="flex gap-1 items-center">
           <Buildings />
           <p>{clientOrCompany}</p>
@@ -20,7 +19,6 @@ export default function Card({ title, desc, stack, url, clientOrCompany }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Eye />
               Acessar
             </a>
           </div>

@@ -1,29 +1,33 @@
+import { Yesteryear } from "next/font/google";
 import SplitText from "../../../../shared/components/SplitText";
-import TextType from "../../../../shared/components/TextType";
+
+const yesteryear = Yesteryear({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Intro() {
   return (
     <div className="flex flex-col items-center w-fit">
-      <div className="flex gap-2 items-center py-2 px-4 text-2xl rounded-sm w-fit max-sm:text-xl">
-        <p>Olá, sou Luan Cardoso &#x1F44B;&#x1F3FB;</p>
-      </div>
-      <h1 className="text-8xl font-extrabold max-sm:text-6xl max-sm:text-center">
-        <TextType
-          text={["Software", "Web"]}
-          typingSpeed={145}
-          pauseDuration={1500}
-          showCursor={true}
-          cursorCharacter="|"
-        />
+      <div className="flex items-center gap-4 max-sm:gap-2">
+        <h1
+          className={`text-red-500 text-7xl ${yesteryear.className} font-light max-sm:text-4xl`}
+        >
+          Luan
+        </h1>
         <SplitText
-          className="font-light text-6xl max-sm:hidden"
-          text="Developer."
+          className="font-extrabold text-8xl max-sm:hidden"
+          text="CARDOSO"
           duration={0.8}
         />
-        <span className="ml-6 font-light text-6xl max-sm:text-4xl hidden max-sm:block">
-          Developer.
+        <span className="font-extrabold text-8xl max-sm:text-4xl hidden max-sm:block">
+          CARDOSO
         </span>
-      </h1>
+      </div>
+      <div className="tracking-wider flex items-center py-2 px-4 text-2xl rounded-sm font-bold w-fit max-sm:text-sm">
+        <p>DESENVOLVEDOR DE SOFTWARE</p>
+      </div>
     </div>
   );
 }

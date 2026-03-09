@@ -2,7 +2,7 @@ import SplitText from "../../../../shared/components/SplitText";
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 text-(--black)">
       <div>
         <SplitText
           className="font-bold text-xl max-sm:hidden"
@@ -12,7 +12,7 @@ export default function About() {
         <h2 className="font-bold text-xl hidden max-sm:block max-sm:text-lg">
           Construindo Experiências
         </h2>
-        <p className="text-(--gray) max-sm:text-sm">
+        <p className="max-sm:text-sm">
           Aplicações escaláveis, robustas e seguras.
         </p>
       </div>

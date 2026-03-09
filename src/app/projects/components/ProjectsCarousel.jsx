@@ -12,7 +12,7 @@ export default function ProjectsCarousel({ projects }) {
   // Verificação de segurança
   if (!projects || !Array.isArray(projects) || projects.length === 0) {
     return (
-      <div className="text-center py-8 text-gray-400">
+      <div className="text-center py-8">
         Nenhum projeto disponível no momento.
       </div>
     );
@@ -100,8 +100,8 @@ export default function ProjectsCarousel({ projects }) {
               onClick={() => goToSlide(index)}
               className={`cursor-pointer h-3 w-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "w-10 bg-gradient"
-                  : "w-2 bg-[#252525] hover:bg-[#353535]"
+                  ? "w-10 bg-[#fb2c36]"
+                  : "w-2 bg-(--white) hover:bg-[#fb2c36]"
               }`}
               aria-label={`Ir para slide ${index + 1}`}
             />
