@@ -10,7 +10,7 @@ export default function Services() {
           text="O que posso criar?"
           duration={0.8}
         />
-        <p >Desenvolvendo soluções.</p>
+        <p>Desenvolvendo soluções.</p>
       </div>
       <div className="flex flex-col text-lg">
         <span className="flex gap-2 items-center">
@@ -28,10 +28,6 @@ export default function Services() {
         <span className="flex gap-2 items-center">
           <Arrow />
           APIs e Microsserviços.
-        </span>
-        <span className="flex gap-2 items-center">
-          <Arrow />
-          Apps Android e iOS [Em Breve].
         </span>
       </div>
     </div>

@@ -13,13 +13,13 @@ export default function Home() {
       </section>
       <section className="h-full overflow-hidden">
         <div className="p-10 grid grid-cols-3 grid-rows-1 gap-10 max-sm:grid-cols-1 max-sm:p-5 h-full items-start">
-          <div className="bg-[#e6e6e6] h-64 p-6 rounded-md max-sm:border-transparent max-sm:px-4 max-sm:text-center">
+          <div className="bg-indigo-400/30 h-64 p-6 rounded-md max-sm:border-transparent max-sm:px-4 max-sm:text-center">
             <About />
           </div>
-          <div className="bg-[#e6e6e6] p-6 rounded-md max-sm:hidden h-64">
+          <div className="bg-indigo-400/30 p-6 rounded-md max-sm:hidden h-64">
             <Skills />
           </div>
-          <div className="bg-[#e6e6e6] 0 p-6 rounded-md max-sm:hidden h-64">
+          <div className="bg-indigo-400/30 0 p-6 rounded-md max-sm:hidden h-64">
             <Services />
           </div>
         </div>

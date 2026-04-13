@@ -5,8 +5,8 @@ export default function Card({ title, desc, stack, url, clientOrCompany }) {
   const stackArray = Array.isArray(stack) ? stack : [];
 
   return (
-    <div className="grid grid-cols-1 grid-rows-[2fr_8fr] w-[560px] h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl bg-red-500 border border-black/25">
-      <div className="rounded-t-2xl bg-red-500 flex justify-between items-center px-10 py-4 ">
+    <div className="grid grid-cols-1 grid-rows-[1fr_9fr] w-[560px] h-[350px] max-sm:w-[300px] max-sm:h-[300px] rounded-2xl bg-indigo-400 border border-black/25">
+      <div className="rounded-t-2xl bg-indigo-400 flex justify-between items-center px-10">
         <div className="flex gap-1 items-center">
           <Buildings />
           <p>{clientOrCompany}</p>

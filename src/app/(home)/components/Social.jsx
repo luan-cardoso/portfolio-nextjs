@@ -6,13 +6,13 @@ export default function Social() {
   return (
     <div className="absolute flex gap-2 items-center bottom-10 left-10">
       <a href="https://github.com/luan-cardoso" target="_blank">
-        <Badge bg="#fb2c36">
+        <Badge bg="#7c86ff">
           <GitHub />
           <p className="">GitHub</p>
         </Badge>
       </a>
       <a href="https://wa.me/5585988811690" target="_blank">
-        <Badge bg="#fb2c36">
+        <Badge bg="#7c86ff">
           <WhatsApp />
           <p className="">WhatsApp</p>
         </Badge>

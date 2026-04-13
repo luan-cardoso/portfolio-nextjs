@@ -100,8 +100,8 @@ export default function ProjectsCarousel({ projects }) {
               onClick={() => goToSlide(index)}
               className={`cursor-pointer h-3 w-3 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "w-10 bg-[#fb2c36]"
-                  : "w-2 bg-(--white) hover:bg-[#fb2c36]"
+                  ? "w-10 bg-[#7c86ff]"
+                  : "w-2 bg-(--black) hover:bg-[#7c86ff]"
               }`}
               aria-label={`Ir para slide ${index + 1}`}
             />
