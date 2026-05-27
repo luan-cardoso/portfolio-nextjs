@@ -1,7 +1,9 @@
+import { unstable_noStore as noStore } from "next/cache";
 import clientPromise from "./mongodb";
 
 // Function to get all projects from the database
 export async function getAllProjects() {
+  noStore();
   try {
     const client = await clientPromise;
     const db = client.db("projetos_db");
